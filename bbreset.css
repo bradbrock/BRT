@@ -1,0 +1,35 @@
+/* Set "box-sizing:border-box" on "HTML" */
+html{
+	box-sizing: border-box;
+}
+
+/* Cascade to everything else, allows you to reset box-sizing on an element and all it's children */
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+/* My personal preferences */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, img, ol, ul, li, article, footer, header, nav{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+ol, ul{
+	list-style: none;
+}
+
+/* Chris Coyier micro clearfix. Supports IE8 and up */
+.clfx:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Just a wrapper */
+.wrap{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+}
